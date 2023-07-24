@@ -1,0 +1,341 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+/*
+  Add style rules for the body of a your webpage.
+  Note: These rules will be applied to all elements.
+*/
+body { background-color:white;
+
+    /* Add a background color or image 
+    background-color: white;
+    background-image: url('');
+*/
+    /* Customize the font, size, and color for text*/
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+    color: black;
+
+    /* Adjust the padding and margins */
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+
+}
+
+
+
+/*
+  Style Text: Add style rules for any headings (h1-6),
+  paragraphs and links
+*/
+
+h1 {background-color: #333;
+          color: whitesmoke;
+          text-align: center;
+
+}
+
+h2 {
+
+}
+
+h3 {text-align: center;
+
+}
+
+p {font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+a {
+
+}
+
+
+/*
+  Style Lists: Styles added to the ol or ul style rulesets affect the entire
+  list, while styles added to the li style ruleset affect individual list items
+*/
+
+
+ol {
+
+}
+
+ol li {
+
+}
+
+
+ul {
+
+}
+
+ul li {
+
+}
+
+
+/*
+  Style Buttons: Add style rules for any headings (h1-6),
+  paragraphs and links
+*/
+
+button {
+  background-color:  blue;
+  border: 2px solid black;
+  color: white;
+  font-size: 12px;
+  text-align: center;
+  cursor: pointer;
+  width: 100px;
+  height: 50px;
+  
+}
+
+
+
+/* Select and style elements by class name or ID */
+
+
+/* Example: This styles elements with class="header"*/
+
+  .header-container{
+  display: flex;
+  flex-direction: row;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: right;
+  padding-top: 50px; /* Adds spacing above the header */
+  margin-top: 20px; /* Adds spacing below the header */
+  text-align: center; /* Centers any text in the header */
+}
+
+#header-right {
+  float: right;
+  margin-left: 20px;
+}
+#header-left {
+  float: left;
+  margin-right: 20px;
+}
+.header-nav {
+        display: flex;
+        gap: 20px;
+}
+
+
+
+/* Example: This styles an element with an id="header-img" */
+#header-img {width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.header-button {
+  background-color: white;
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.header-link {
+        color: white;
+        text-decoration: none;
+        margin: 0 10px;
+        font-size: 18px;
+        transition: color 0.2s;
+      }
+/* Styles for the header container */
+.header-container{
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: right;
+  padding-top: 50px; /* Adds spacing above the header */
+  margin-top: 20px; /* Adds spacing below the header */
+  text-align: center; /* Centers any text in the header */
+}
+
+/* Styles for the left side of the header */
+#header-left {
+  width: 35%; /* Sets the width of the left side to 35% */
+}
+
+/* Styles for the right side of the header */
+#header-right {
+  width: 65%; /* Sets the width of the right side to 65% */
+}
+
+
+
+.footer-container {
+        background-color: #333;
+        color: white;
+        position: sticky;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 40px 0;
+        text-align: center;
+      }
+      /* Styles for the footer links */
+      .footer-link {
+        color: white;
+        text-decoration: none;
+        margin: 0 10px;
+        font-size: 18px;
+        transition: color 0.2s;
+      }
+
+      .footer-link:hover {
+        color: #f4baba;
+      }
+
+
+/* Part 1: Navbar */
+
+
+/* Style rule set for individual li */
+.navbar ul li {
+    float: left;
+    margin: 10px;
+}
+
+
+/* Style rule set for individual li link */
+.navbar ul li a {
+    font-family: 'Times New Roman', Times, serif;
+    color:white;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+/* Style rule set for hovered link */
+.navbar ul li a:hover {
+    font-weight: bold;
+}*/
+
+
+
+
+/* Part 2: Flexbox */
+
+/* General style rule set for flex container */
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+
+/* Style rules for flex-item 1 */
+.flex-item:nth-of-type(1) {
+
+}
+
+/* Style rules for flex-item 2 */
+.flex-item:nth-of-type(2) {
+
+}
+
+/* Style rules for flex-item 3 */
+.flex-item:nth-of-type(3) {
+
+}
+
+
+/* Style set for all flex-items */
+.flex-item {
+    background: white;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+.navbar {
+  background-color: #333; /* change to desired color */
+}
+
+.navbar ul {
+  list-style-type: none;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.navbar li {
+  float: left;
+  margin: 0 10px;
+}
+
+.navbar li a {
+  display: block;
+  text-decoration: none;
+  color: white; /* change to desired color */
+  text-align: center;
+  padding: 14px 16px;
+}
+
+.navbar li a:hover {
+  background-color: #ddd; /* change to desired color */
+  color: #f4baba; /* change to desired color */
+}
+/* Add style to button */
+#theme-button {
+  text-decoration: none;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 11px;
+  color: white;
+  background-color: black;
+  border: 2px dotted black;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Customize Dark Mode Theme */
+.dark-mode {
+  background-color: black;
+  color: white;
+  /* add any additional CSS rules you want for dark mode */
+}
+.petition-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+  padding-bottom: 50px;
+}
+.petition-para {
+  width: 55%;
+  padding-right: 10px;
+}
+.signatures {
+  width: 45%;
+  padding-right: 10px;
+}
+/* Add to CSS file */
+.error {
+  border-style: solid;
+  border-width: 2px;
+  border-color: red;
+  background:pink;
+}
+
+
+
